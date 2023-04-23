@@ -1,0 +1,19 @@
+CREATE DATABASE productsapi;
+
+
+DROP TABLE IF EXISTS products;
+
+CREATE TABLE products (
+    id SERIAL PRIMARY KEY,
+    name CHAR(50) NOT NULL,
+    description CHAR(100) NOT NULL
+);
+
+
+INSERT INTO products(name, description) VALUES ('produto 1', 'meu primeiro produto');
+
+
+{
+ "description": "meu segundo produto",
+ "name": "produto 2"
+}
